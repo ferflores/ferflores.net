@@ -2,6 +2,7 @@ body {
   background-color: #0d020c;
   background-image: url('../img/bg.jpg');
   height:100%;
+  font-family: sourceFont
 }
 
 .me {
@@ -10,7 +11,7 @@ body {
   margin-bottom: -10px;
   position: relative;
   z-index: 1000;
-  box-shadow: 0 0 1em black;
+  box-shadow: 0 0 1em #222222;
 }
 
 .my-name {
@@ -47,7 +48,7 @@ body {
 }
 
 .footer {
-  height: 150px;
+  height: 120px;
   width: 100%;
   background-color: black;
 }
@@ -56,6 +57,16 @@ body {
   max-width: 150px;
   padding: 2rem;
   margin: auto;
+}
+
+.work-in-progress {
+  max-width: 300px;
+  margin: auto;
+}
+
+@font-face {
+    font-family: sourceFont;
+    src: url('../fonts/SourceCodePro-Regular.otf.woff');
 }
 
 /* General styles */
