@@ -1,0 +1,35 @@
+{
+  "name": "ferflores.net",
+  "version": "1.0.0",
+  "description": "ferflores personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferflores/ferflores.net.git"
+  },
+  "keywords": [
+    "ferflores",
+    "developer",
+    ".net",
+    "javascript"
+  ],
+  "author": "Fernando Flores ferflores@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferflores/ferflores.net/issues"
+  },
+  "homepage": "https://github.com/ferflores/ferflores.net#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-browserify": "^0.5.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9"
+  }
+}

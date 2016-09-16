@@ -1,0 +1,26 @@
+{
+  "name": "ferflores.net",
+  "description": "ferflores personal website",
+  "main": "index.js",
+  "authors": [
+    "Fernando Flores ferflores@gmail.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ferflores",
+    "developer",
+    ".net",
+    "javascript"
+  ],
+  "homepage": "https://github.com/ferflores/ferflores.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
