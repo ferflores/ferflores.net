@@ -2,9 +2,10 @@ import gulp from 'gulp';
 import bower from 'gulp-bower';
 import browserify from 'gulp-browserify';
 import uglify from 'gulp-uglify';
+import cleanCSS from 'gulp-clean-css';
 
 
-gulp.task('install', ['install_bower', 'copy_statics', 'build_js']);
+gulp.task('install', ['install_bower', 'copy_statics', 'build_js', 'minify_css']);
 
 gulp.task('install_bower', () => {
   return bower();
@@ -22,9 +23,16 @@ gulp.task('build_js', function() {
     .pipe(gulp.dest('dist/js/'));
 });
 
+gulp.task('minify_css', function() {
+  return gulp.src('src/css/main.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/css'));
+});
+
 gulp.task('watch', () => {
   gulp.watch(['src/static/**/*'], ['copy_statics']);
   gulp.watch(['src/js/**/*'], ['build_js']);
+  gulp.watch(['src/css/**/*'], ['minify_css']);
 });
 
 gulp.task('default', ['install', 'watch']);

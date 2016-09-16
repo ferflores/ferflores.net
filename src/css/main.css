@@ -1,5 +1,7 @@
 body {
   background-color: #0d020c;
+  background-image: url('../img/bg.jpg');
+  height:100%;
 }
 
 .me {
@@ -30,7 +32,7 @@ body {
 
 .up-line {
   width:100%;
-  height:20px;
+  height:15px;
   background-color: #91092c;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -44,7 +46,23 @@ body {
   margin-bottom: 2rem;
 }
 
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: black;
+}
+
+.lager-logo {
+  max-width: 150px;
+  padding: 2rem;
+  margin: auto;
+}
+
 /* General styles */
+
+a {
+  font-size: 1.5rem;
+}
 
 ul {
   list-style: none;
