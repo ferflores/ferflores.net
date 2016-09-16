@@ -4,7 +4,8 @@
   "description": "ferflores personal website",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "install": "gulp install",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
