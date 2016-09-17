@@ -8,8 +8,6 @@ export default {
 	bounce: -1,
 	friction: 1,
 	gravity: 0,
-	springs: null,
-	gravitations: null,
 
 	create: function(x, y, speed, direction, grav) {
 		var obj = Object.create(this);
@@ -18,8 +16,6 @@ export default {
 		obj.vx = Math.cos(direction) * speed;
 		obj.vy = Math.sin(direction) * speed;
 		obj.gravity = grav || 0;
-		obj.springs = [];
-		obj.gravitations = [];
 		return obj;
 	},
 
