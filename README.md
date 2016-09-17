@@ -6,3 +6,9 @@ My personal website
   npm install
 ```
 Then open dist/index.html
+
+
+```js
+  npm start
+```
+For watch and update source files in dist directory
