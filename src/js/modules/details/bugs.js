@@ -7,7 +7,7 @@ export default ()=> {
 	var stopped = false;
 	var canvas = null;
 	var bleatles = [];
-  run();
+	run();
 
 	function run(){
     canvas = document.createElement('canvas');
