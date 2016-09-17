@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import bower from 'gulp-bower';
 import browserify from 'gulp-browserify';
+import babelify from 'babelify';
 import uglify from 'gulp-uglify';
 import cleanCSS from 'gulp-clean-css';
 import exec from 'gulp-exec';
