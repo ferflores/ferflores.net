@@ -1,3 +1,3 @@
-import bugs from './modules/easterEggs/bugs';
+import bugs from './modules/details/bugs';
 
 bugs()
