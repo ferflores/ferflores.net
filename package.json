@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "gulp install",
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "deploy": "cd dist && s3-deploy './**' --bucket 'ferflores.net'"
   },
   "repository": {
     "type": "git",
@@ -27,11 +28,14 @@
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
+    "bower-installer": "^1.2.0",
     "gulp": "^3.9.1",
     "gulp-bower": "0.0.13",
     "gulp-browserify": "^0.5.1",
     "gulp-clean-css": "^2.0.12",
+    "gulp-exec": "^2.1.2",
     "gulp-uglify": "^2.0.0",
-    "gulp-watch": "^4.3.9"
+    "gulp-watch": "^4.3.9",
+    "s3-deploy": "^0.6.1"
   }
 }

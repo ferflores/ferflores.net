@@ -3,12 +3,17 @@ import bower from 'gulp-bower';
 import browserify from 'gulp-browserify';
 import uglify from 'gulp-uglify';
 import cleanCSS from 'gulp-clean-css';
+import exec from 'gulp-exec';
 
 
 gulp.task('install', ['install_bower', 'copy_statics', 'build_js', 'minify_css']);
 
-gulp.task('install_bower', () => {
-  return bower();
+gulp.task('install_bower', cb => {
+  exec('bower-installer', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 });
 
 gulp.task('copy_statics', () => {

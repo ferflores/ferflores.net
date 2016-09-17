@@ -22,5 +22,11 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
+  },
+  "install":{
+    "path": "./dist/bower",
+    "sources":{
+      "bootstrap": "bower_components/bootstrap/dist/css/bootstrap.min.css"
+    }
   }
 }
