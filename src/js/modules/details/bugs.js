@@ -10,29 +10,29 @@ export default ()=> {
 	run();
 
 	function run(){
-    canvas = document.createElement('canvas');
-    canvas.id = 'canvas'
-    canvas.style.zIndex = 1;
-    canvas.style.position = 'absolute';
-    canvas.style.top = 0;
-    canvas.style.left = 0;
-    canvas.width = window.innerWidth-100;
-    canvas.height = window.innerHeight-100;
-    document.body.style.margin = 0;
-    document.body.style.padding = 0;
-    document.body.appendChild(canvas);
+		canvas = document.createElement('canvas');
+		canvas.id = 'canvas'
+		canvas.style.zIndex = 1;
+		canvas.style.position = 'absolute';
+		canvas.style.top = 0;
+		canvas.style.left = 0;
+		canvas.width = window.innerWidth-100;
+		canvas.height = window.innerHeight-100;
+		document.body.style.margin = 0;
+		document.body.style.padding = 0;
+		document.body.appendChild(canvas);
 
 		context = canvas.getContext("2d");
 		cx = canvas.width / 2;
 		cy = canvas.height / 2;
 
-    window.onresize = function(){
-      canvas.width = window.innerWidth-100;
-      canvas.height = window.innerHeight-100;
-    }
+		window.onresize = function(){
+		  canvas.width = window.innerWidth-100;
+		  canvas.height = window.innerHeight-100;
+		}
 
-    configure();
-    main();
+		configure();
+		main();
 	}
 
 	function configure(){
