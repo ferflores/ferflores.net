@@ -59,6 +59,7 @@ body, html {
 
 .container {
   flex: 1;
+  z-index: 2;
 }
 
 footer {
