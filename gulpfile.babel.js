@@ -24,8 +24,8 @@ gulp.task('copy_statics', () => {
 
 gulp.task('build_js', function() {
  return gulp.src('src/js/main.js')
-    .pipe(browserify({debug:true}))
-    //.pipe(production(uglify()))
+    .pipe(browserify({debug:false}))
+    .pipe(uglify())
     .pipe(gulp.dest('dist/js/'));
 });
 
