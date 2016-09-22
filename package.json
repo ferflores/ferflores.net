@@ -4,7 +4,7 @@
   "description": "ferflores personal website",
   "main": "index.js",
   "scripts": {
-    "install": "gulp install",
+    "install": "gulp install && bower-installer",
     "start": "gulp watch",
     "deploy": "cd dist && s3-deploy './**' --bucket 'ferflores.net'"
   },
