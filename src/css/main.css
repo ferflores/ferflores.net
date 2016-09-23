@@ -6,6 +6,7 @@ body, html {
   font-family: sourceFont;
   display: flex;
   flex-direction: column;
+  line-height: normal;
 }
 
 .me {
@@ -89,7 +90,6 @@ footer {
 #guestbook {
   width: 100%;
   height:400px;
-  background-color: red;
 }
 
 /* General styles */
