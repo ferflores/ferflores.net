@@ -4,7 +4,7 @@
   "description": "ferflores personal website",
   "main": "index.js",
   "scripts": {
-    "install": "gulp install",
+    "install": "gulp install && bower-installer",
     "start": "gulp watch",
     "deploy": "cd dist && s3-deploy './**' --bucket 'ferflores.net'"
   },
@@ -37,7 +37,9 @@
     "url": "https://github.com/ferflores/ferflores.net/issues"
   },
   "homepage": "https://github.com/ferflores/ferflores.net#readme",
-  "dependencies": {},
+  "dependencies": {
+    "squarebook": "^1.1.1"
+  },
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
