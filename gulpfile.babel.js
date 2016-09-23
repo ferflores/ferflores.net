@@ -7,15 +7,7 @@ import cleanCSS from 'gulp-clean-css';
 import exec from 'gulp-exec';
 
 
-gulp.task('install', ['install_bower', 'copy_statics', 'build_js', 'minify_css']);
-
-gulp.task('install_bower', cb => {
-  exec('bower-installer', function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
-});
+gulp.task('install', ['copy_statics', 'build_js', 'minify_css']);
 
 gulp.task('copy_statics', () => {
   return gulp.src('src/static/**/*')
