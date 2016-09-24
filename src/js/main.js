@@ -3,7 +3,7 @@ import guestbook from 'squarebook';
 
 bugs()
 
-squarebook({
+guestbook({
   container: document.getElementById('guestbook'),
   firebaseConfig: {
     apiKey: "AIzaSyDZL2pOHvTJJb8SEartEwhZDe-8XPIb_ME",
