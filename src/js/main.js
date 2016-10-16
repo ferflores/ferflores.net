@@ -5,6 +5,7 @@ bugs()
 
 guestbook({
   container: document.getElementById('guestbook'),
+  drawSquareInterval:10,
   firebaseConfig: {
     apiKey: "AIzaSyDZL2pOHvTJJb8SEartEwhZDe-8XPIb_ME",
     authDomain: "myguestbook-a3cb4.firebaseapp.com",
