@@ -108,3 +108,11 @@ li:before {
     color: #91092c;
     font-weight: bold;
 }
+
+/* Media queries */
+
+@media only screen and (max-device-width: 480px) {
+  .squarebook_nameInput {
+    font-size: 200px !important
+  }
+}
