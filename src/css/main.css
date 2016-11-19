@@ -113,6 +113,6 @@ li:before {
 
 @media only screen and (max-device-width: 480px) {
   .squarebook_nameInput {
-    font-size: 200px !important
+    width: 200px !important
   }
 }
