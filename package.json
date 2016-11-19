@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/ferflores/ferflores.net#readme",
   "dependencies": {
-    "squarebook": "^1.1.92"
+    "squarebook": "^1.1.94"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
